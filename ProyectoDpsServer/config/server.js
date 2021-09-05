@@ -1,5 +1,5 @@
 module.exports = ({ env }) => ({
-  host: env('HOST', 'localhost'),
+  host: env('HOST', '192.168.1.28'),
   port: env.int('PORT', 8082),
   admin: {
     auth: {
