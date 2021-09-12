@@ -9,7 +9,7 @@ import { formStyle } from "../../styles";
 
 export default function RegisterForm(props) {
     const { changeForm } = props;
-    const [loading, setLoading] = useState(false)
+    const [loading, setLoading] = useState(true);
 
     const formik = useFormik({
         initialValues: initialValues(),
@@ -65,7 +65,8 @@ export default function RegisterForm(props) {
                 style={formStyle.btnSuccess}
                 onPress={formik.handleSubmit}
                 loading={loading}
-            >Registrarse</Button>
+            >
+                Registrarse</Button>
             <Button
                 onPress={changeForm}
                 mode="text"
