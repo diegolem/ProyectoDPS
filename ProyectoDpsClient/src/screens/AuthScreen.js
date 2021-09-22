@@ -5,7 +5,7 @@ import LoginForm from '../components/Auth/LoginForm';
 import logo from "../../assets/logo.png";
 import { layoutStyle } from "../styles";
 
-export default function Auth() {
+export default function AuthScreen() {
     const [showLogin, setShowLogin] = useState(true);
 
     const changeForm = () => setShowLogin(!showLogin);

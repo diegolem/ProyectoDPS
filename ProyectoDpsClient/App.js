@@ -2,7 +2,7 @@ import React, { useState, useMemo, useEffect } from 'react';
 import { Text, View, Button } from 'react-native';
 import { Provider as PaperProvider } from 'react-native-paper';
 import jwtDecode from 'jwt-decode';
-import AuthScreen from './src/screens/Auth';
+import AuthScreen from './src/screens/AuthScreen';
 import AuthContext from './src/context/AuthContext';
 import { setTokenApi, getTokenApi, removeTokenApi } from './src/api/token';
 import AppNavigation from './src/navigation/AppNavigation';
