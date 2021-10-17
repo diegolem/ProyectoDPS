@@ -7,6 +7,7 @@ import Toast from "react-native-root-toast";
 import useAuth from '../../hooks/useAuth';
 import { loginApi } from "../../api/user";
 import { formStyle } from "../../styles";
+import * as Google from "expo-google-app-auth";
 
 
 export default function LoginForm(props) {
@@ -31,6 +32,24 @@ export default function LoginForm(props) {
             }
         },
     });
+
+    const signInAsync = async () => {
+        console.log("LoginForm.js 37 | loggin in");
+        try {
+          const { type, user } = await Google.logInAsync({
+            iosClientId: `<YOUR_IOS_CLIENT_ID>`,
+            androidClientId: `<YOUR_ANDROID_CLIENT_ID>`,
+          });
+    
+          if (type === "success") {
+            // Then you can use the Google REST API
+            console.log("LoginForm.js 46 | success, navigating to profile");
+            console.log(user);
+          }
+        } catch (error) {
+          console.log("LoginForm.js 50 | error with login", error);
+        }
+    };
 
     return (
         <View>
@@ -61,6 +80,13 @@ export default function LoginForm(props) {
                 mode="text"
                 onPress={changeForm}
             >Registrarse</Button>
+
+            <Button
+                style={formStyle.btnText}
+                labelStyle={formStyle.btnTextLabel}
+                mode="text"
+                onPress={signInAsync}
+            >Iniciar sesión con Google</Button>
         </View>
     )
 }
