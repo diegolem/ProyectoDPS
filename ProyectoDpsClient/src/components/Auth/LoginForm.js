@@ -7,7 +7,7 @@ import Toast from "react-native-root-toast";
 import useAuth from '../../hooks/useAuth';
 import { loginApi } from "../../api/user";
 import { formStyle } from "../../styles";
-import * as Google from "expo-google-app-auth";
+import * as GoogleSignIn from 'expo-google-app-auth';
 
 
 export default function LoginForm(props) {
@@ -36,18 +36,19 @@ export default function LoginForm(props) {
     const signInAsync = async () => {
         console.log("LoginForm.js 37 | loggin in");
         try {
-          const { type, user } = await Google.logInAsync({
-            iosClientId: `<YOUR_IOS_CLIENT_ID>`,
-            androidClientId: `<YOUR_ANDROID_CLIENT_ID>`,
-          });
-    
-          if (type === "success") {
-            // Then you can use the Google REST API
-            console.log("LoginForm.js 46 | success, navigating to profile");
-            console.log(user);
-          }
-        } catch (error) {
-          console.log("LoginForm.js 50 | error with login", error);
+            const { type, accessToken, user } = await GoogleSignIn.logInAsync({
+                iosClientId: "755853645487-l6rai7beiaqm0p9oppl87qq1hpgenp89.apps.googleusercontent.com",
+                androidClientId: "755853645487-99t9m7v6vnnihf8lcjv20jsutk3g8aam.apps.googleusercontent.com",
+                scopes: ['profile', 'email']
+            });
+
+            if (type === "success") {
+                // Then you can use the Google REST API
+                console.log("LoginForm.js 46 | success, navigating to profile");
+                console.log(user);
+            }
+        } catch ({ message }) {
+            alert('GoogleSignIn.initAsync(): ' + message);
         }
     };
 
