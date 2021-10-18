@@ -17,3 +17,6 @@ https://trello.com/b/ojamFJSd/nextphonekanban
 
 Mockups
 https://github.com/diegolem/ProyectoDPS/tree/main/MockUps
+
+Video Funcionamiento de Aplicación(Segunda Fase):
+https://drive.google.com/file/d/1icJzj48KUy4XV9d-ZaeyxQCn_4GQzdFd/view?usp=sharing
