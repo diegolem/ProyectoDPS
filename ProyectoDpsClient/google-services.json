@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "755853645487",
+    "project_id": "next-phone-8fa24",
+    "storage_bucket": "next-phone-8fa24.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:755853645487:android:541f93b973f960fe8da65a",
+        "android_client_info": {
+          "package_name": "com.udb.proyectoDps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "755853645487-99t9m7v6vnnihf8lcjv20jsutk3g8aam.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjB8rbZ61yUN5rqP0xlX75eLnBe-ATS5k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "755853645487-99t9m7v6vnnihf8lcjv20jsutk3g8aam.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

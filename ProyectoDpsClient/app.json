@@ -18,7 +18,13 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.udb.proyectoDps"
+      "bundleIdentifier": "com.udb.proyectoDps",
+      "config": {
+        "googleSignIn": {
+          "reservedClientId": "com.googleusercontent.apps.755853645487-l6rai7beiaqm0p9oppl87qq1hpgenp89"
+        }
+      },
+      "googleServicesFile": "./GoogleService-Info.plist"
     },
     "android": {
       "adaptiveIcon": {
