@@ -9,11 +9,10 @@ import { useNavigation } from "@react-navigation/native";
 const width = Dimensions.get("window").width;
 const height = 160;
 
-const navigation = useNavigation();
-
 export default function Banners() {
     const [banners, setBanners] = useState(null);
-    const [bannerActive, setBannerActive] = useState(0)
+    const [bannerActive, setBannerActive] = useState(0);
+    const navigation = useNavigation();
 
     useEffect(() => {
         (async () => {
