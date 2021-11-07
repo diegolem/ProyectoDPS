@@ -1,6 +1,7 @@
 import React from 'react';
 import { createStackNavigator } from "@react-navigation/stack";
 import Home from "../screens/Product/Home";
+import SearchScreen from "../screens/Product/Search";
 import Product from '../screens/Product/Product';
 
 import colors from "../styles/colors";
@@ -21,6 +22,11 @@ export default function ProductStack() {
             <Stack.Screen
                 name="home"
                 component={Home}
+                options={{ headerShown: false }}
+            />
+            <Stack.Screen
+                name="search"
+                component={SearchScreen}
                 options={{ headerShown: false }}
             />
             <Stack.Screen
