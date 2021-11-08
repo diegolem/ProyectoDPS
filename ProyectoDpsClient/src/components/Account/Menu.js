@@ -66,7 +66,7 @@ export default function Menu() {
                     title="Pedidos"
                     description="Listado de todos los pedidos"
                     left={(props) => <List.Icon {...props} icon="clipboard-list"></List.Icon>}
-                    onPress={() => { }}
+                    onPress={() => navigation.navigate("orders")}
                 />
                 <List.Item
                     title="Lista de deseos"
