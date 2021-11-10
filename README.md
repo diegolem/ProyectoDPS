@@ -17,3 +17,6 @@ https://trello.com/b/ojamFJSd/nextphonekanban
 
 Mockups
 https://github.com/diegolem/ProyectoDPS/tree/main/MockUps
+
+Manual Técnico: https://github.com/diegolem/ProyectoDPS/blob/dev/Manual%20T%C3%A9cnico.pdf
+Manual de Usuario: https://github.com/diegolem/ProyectoDPS/blob/dev/Manual%20de%20usuario.pdf
